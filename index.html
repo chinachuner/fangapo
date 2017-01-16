@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>房阿婆</title>
@@ -7,61 +7,76 @@
     <link rel="stylesheet" href="assets/css/main.css"/>
 </head>
 <body>
-    <div class="header">
-        <img class="logo" src="assets/img/logo.png"/>
-
-        <ul class="nav">
-            <li>
-                <a href="#" class="nav_item">首页</a>
-            </li>
-            <li>
-                <a href="#" class="nav_item">产品</a>
-            </li>
-            <li>
-                <a href="#" class="nav_item">价格</a>
-            </li>
-            <li>
-                <a href="#" class="nav_item">关于</a>
-            </li>
-            <li>
-                <a href="#" class="nav_item">首页</a>
-            </li>
-            <li>
-                <a href="#" class="nav_btn">登录</a>
-            </li>
-
-        </ul>
-    </div>
     <div class="site-main">
+        <div class="main-container">
+            <header class="header">
+                <img class="logo" src="assets/img/logo.png"/>
+
+                <ul class="nav">
+                    <li>
+                        <a href="#" class="nav-item">首页</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-item">产品</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-item">价格</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-item">关于</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-item">首页</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-btn">登录</a>
+                    </li>
+                </ul>
+            </header>
+            <div class="main-desc">
+                <h1>
+                    <span class="desc-highlight">房阿婆</span>
+                    专注于酒店的SAAS服务商
+                </h1>
+                <h3>超过1000家酒店正在使用</h3>
+                <div class="btn-register-cont">
+                    <a href="#" class="btn-register">免费注册</a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="site-footer">
+            <div class="links">
+
+            </div>
+            <div class="copyright">
+
+            </div>
+        </footer>
+    </div>
+
+    <div class="site-bg">
         <!-- Swiper -->
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide" style="background-image:url(./assets/img/1.jpg)">
-                    <div class="title" data-swiper-parallax="-100">Slide 1</div>
-                    <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
-                    <div class="text" data-swiper-parallax="-300">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros quis feugiat.</p>
-                    </div>
+                    <!--<div class="title" data-swiper-parallax="-100">Slide 1</div>-->
+                    <!--<div class="subtitle" data-swiper-parallax="-200">Subtitle</div>-->
+                    <!--<div class="text" data-swiper-parallax="-300">-->
+                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros quis feugiat.</p>-->
+                    <!--</div>-->
                 </div>
                 <div class="swiper-slide" style="background-image:url(./assets/img/2.jpg)">
-                    <div class="title" data-swiper-parallax="-100">Slide 2</div>
-                    <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
-                    <div class="text" data-swiper-parallax="-300">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros quis feugiat.</p>
-                    </div>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./assets/img/3.jpg)">
-                    <div class="title" data-swiper-parallax="-100">Slide 3</div>
-                    <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
-                    <div class="text" data-swiper-parallax="-300">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros quis feugiat.</p>
-                    </div>
                 </div>
             </div>
             <!-- Add Pagination -->
             <div class="swiper-pagination swiper-pagination-white"></div>
         </div>
     </div>
+
+
 
 <script src="assets/js/swiper.min.js"></script>
 <!-- Demo styles -->
@@ -81,6 +96,7 @@
         effect: 'fade',
         loop:true,
         autoplay : 5000,
+        height:100
     });
 </script>
 </body>

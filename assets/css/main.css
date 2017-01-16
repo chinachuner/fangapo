@@ -4,13 +4,26 @@
 }
 body, html {
     height: 100%;
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+    position: relative;
 }
+a{text-decoration: none;color:#fff;}
+h1,h3{text-align: center;color:#fff;}
+.site-main{
+    position: absolute;
+    width: 100%;height: 100%;
+    z-index: 10;
+}
+.main-container{height: 100%;}
 .header{
     /*background-color: #a3d8f1;*/
     height: 60px;
-    position: absolute;
-    width: 100%;
-    z-index: 10;
+    overflow: hidden;
 }
 .header .logo{
     height:100%;
@@ -32,33 +45,21 @@ body, html {
     border-radius: 3px;
     cursor: pointer;
 }
-.header .nav li a.nav_btn{
+.header .nav li a.nav-btn{
     border: 1px solid #fff;
     border-radius: 2px;
     transition: all .2s cubic-bezier(.47,0,.745,.715);
 }
-.header .nav li a.nav_item:hover{
+.header .nav li a.nav-item:hover{
     color:#a3d8f1;
 }
-.header .nav li a.nav_btn:hover{
+.header .nav li a.nav-btn:hover{
     background-color: #fff;
     color:#a3d8f1;
 }
 
-.site-main{
-    min-height:50%;
-}
-html, body {
-    position: relative;
+.site-bg{
     height: 100%;
-}
-body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color:#000;
-    margin: 0;
-    padding: 0;
 }
 .swiper-container {
     width: 100%;
@@ -73,7 +74,6 @@ body {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 100px 60px;
-    height:600px;
 }
 .parallax-bg {
     position: absolute;
@@ -96,4 +96,47 @@ body {
     font-size: 14px;
     max-width: 400px;
     line-height: 1.3;
+}
+.main-desc{
+    padding-top: 12%;
+}
+.main-desc h1{
+    font-size: 50px;
+    font-weight: normal;
+}
+.desc-highlight{
+    color:#2D8FD9;
+}
+.main-desc h3{
+    line-height: 30px;
+    font-size: 18px;
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #c7d5e4;
+    padding: 30px;
+}
+.btn-register-cont{
+    text-align: center;
+}
+.btn-register{
+    display: inline-block;
+    min-width: 140px;
+    height: 56px;
+    line-height: 56px;
+    font-size: 20px;
+    font-size: 2rem;
+    color: #fff;
+    background-color: #2D8FD9;
+    -webkit-transition: all .2s cubic-bezier(.47,0,.745,.715);
+    -moz-transition: all .2s cubic-bezier(.47,0,.745,.715);
+    transition: all .2s cubic-bezier(.47,0,.745,.715);
+}
+.btn-register:hover {
+    background-color: #419ADC;
+}
+
+.site-footer .copyright {
+    background-color: #000;
+    min-height: 70px;
 }
