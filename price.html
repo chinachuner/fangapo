@@ -8,69 +8,52 @@
     <link rel="stylesheet" href="assets/css/main.css"/>
 </head>
 <body>
-
-<header class="header">
-    <img class="logo" src="assets/img/logo.png"/>
-
-    <ul class="nav">
-        <li>
-            <a href="#" class="nav-item">首页</a>
-        </li>
-        <li>
-            <a href="product.html" class="nav-item">产品</a>
-        </li>
-        <li>
-            <a href="price.html" class="nav-item">价格</a>
-        </li>
-        <li>
-            <a href="about.html" class="nav-item">关于</a>
-        </li>
-        <li>
-            <a href="#" class="nav-btn">登录</a>
-        </li>
-        <li>
-            <a href="#" class="nav-btn btn-blue">免费试用</a>
-        </li>
-        <li>
-            <span>1000多家酒店正在使用</span>
-        </li>
-    </ul>
-</header>
-
     <div class="site-main">
+        <header class="header">
+            <img class="logo" src="assets/img/logo.png"/>
 
+            <ul class="nav">
+                <li>
+                    <a href="index.html" class="nav-item">首页</a>
+                </li>
+                <li>
+                    <a href="product.html" class="nav-item">产品</a>
+                </li>
+                <li>
+                    <a href="price.html" class="nav-item">价格</a>
+                </li>
+                <li>
+                    <a href="about.html" class="nav-item">关于</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-btn">登录</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-btn btn-blue">免费试用</a>
+                </li>
+                <li>
+                    <span>1000多家酒店正在使用</span>
+                </li>
+            </ul>
+        </header>
         <!-- Swiper -->
         <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-image:url(./assets/img/1.jpg)">
-                    <div class="title" data-swiper-parallax="-100">专业酒店PMS服务商</div>
-                    <div class="subtitle" data-swiper-parallax="-200">为中小型单体，区域连锁酒店提供saas服务。</div>
-                    <div data-swiper-parallax="-300">
-                        <div class="btn-register-cont">
-                            <a href="#" class="btn-register">免费注册</a>
-                        </div>
+            <div class="swiper-slide" style="background-image:url(./assets/img/4.jpg)">
+                <div class="plan-container">
+                    <div class="plan">
+                        <div class="plan-header">免费版</div>
+                        <div class="plan-body"></div>
+                    </div>
+                    <div class="plan">
+                        <div class="plan-header">单店版</div>
+                        <div class="plan-body"></div>
+                    </div>
+                    <div class="plan">
+                        <div class="plan-header">集团版</div>
+                        <div class="plan-body"></div>
                     </div>
                 </div>
-                <div class="swiper-slide" style="background-image:url(./assets/img/2.jpg)">
-                    <div class="title" data-swiper-parallax="-100">开启酒店智能时代</div>
-                    <div class="subtitle" data-swiper-parallax="-200">智能辅助定价,智能处理订单,智能经营评估。</div>
-                </div>
-                <div class="swiper-slide" style="background-image:url(./assets/img/3.jpg)">
-                    <div class="title" data-swiper-parallax="-100">连接酒店一切资源</div>
-                    <div class="subtitle" data-swiper-parallax="-200">订单直达系统，支付一键关联，公安系统直连，软硬件一体化只做平台，连接酒店的一切。</div>
-                </div>
-                <div class="swiper-slide" style="background-image:url(./assets/img/1.jpg)">
-                    <div class="title" data-swiper-parallax="-100">帮助酒店更好服务客户</div>
-                    <div class="subtitle" data-swiper-parallax="-200">建立客户档案，客户忠诚度管理，客户价值管理，开展客户营销工作，比酒店更懂客户。</div>
-                </div>
-                <div class="swiper-slide" style="background-image:url(./assets/img/2.jpg)">
-                    <div class="title" data-swiper-parallax="-100">数据永久免费开放</div>
-                    <div class="subtitle" data-swiper-parallax="-200">提供会员，单位等核心数据导出服务，不通过数据绑架酒店</div>
-                    <div class="subtitle" data-swiper-parallax="-300">提供酒店订单，财务，客户，入住，商品等数据实时调用接口</div>
-                </div>
             </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination swiper-pagination-white"></div>
         </div>
     </div>
 
@@ -184,18 +167,6 @@
 </style>
 <!-- Initialize Swiper -->
 <script>
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        parallax: true,
-        speed: 600,
-        effect: 'fade',
-        loop:true,
-        autoplay : 5000,
-        height:100
-    });
 </script>
 </body>
 </html>
