@@ -225,7 +225,8 @@ ul,li{list-style-type: none;}
 .plan {
     position: relative;
     display: inline-block;
-    width: 33%;
+    width: 25%;
+    margin: 20px 3%;
     max-width: 406px;
     padding: 0;
     height: 500px;
